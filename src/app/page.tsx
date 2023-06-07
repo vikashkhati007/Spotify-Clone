@@ -1,7 +1,12 @@
-import Image from 'next/image'
-
+import Header from "../../components/header"
+import Navbar from "../../components/navbar"
 export default function Home() {
   return (
-   <h1>Hello I am Home Page</h1>
+    <>
+    <div className="flex w-full h-screen">
+    <Navbar/>
+    <Header/>
+    </div>
+    </>
   )
 }

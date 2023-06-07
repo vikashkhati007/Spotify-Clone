@@ -1,17 +1,33 @@
-import React from 'react'
-
+import Link from "next/link";
+import Image from "next/image";
 const header = () => {
   return (
-    <header className="flex min-h-screen flex-col items-center justify-between p-24">
-    <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-      <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-        Get started by editing&nbsp;
-        <code className="font-mono font-bold">src/app/page.tsx</code>
-      </p>
-    
-    </div>
-  </header>
-  )
-}
+    <header className="w-[80%] h-16 flex justify-between bg-black bg-opacity-95 p-3 text-white items-center">
+      <div className="flex gap-2">
+      <Image className="bg-white rounded-full border border-gray-200 hover:cursor-pointer opacity-40 hover:opacity-100" src={"/navigation/previous.png"} width={30} height={30} alt="next"/>
+      <Image className="bg-white rounded-full border border-gray-200 hover:cursor-pointer opacity-40 hover:opacity-100" src={"/navigation/next.png"} width={30} height={30} alt="next"/>
+      </div>
+      <div className="flex gap-10">
+        <Link href={""}>
+          <span className="font-bold opacity-60 hover:opacity-100 ">Premium</span>
+        </Link>
+        <Link href={""}>
+          <span className="font-bold opacity-60 hover:opacity-100 ">Support</span>
+        </Link>
+        <Link href={""}>
+          <span className="font-bold opacity-60 hover:opacity-100 ">Download</span>
+        </Link>
+        <div className="auth flex gap-5 border-l-2 px-10">
+          <Link href={""}>
+            <span className="font-bold opacity-60 hover:opacity-100 ">Sign up</span>
+          </Link>
+          <Link href={""}>
+            <span className="font-bold text-black hover:opacity-100 bg-white px-5 py-3 rounded-full">Log in</span>
+          </Link>
+        </div>
+      </div>
+    </header>
+  );
+};
 
-export default header
+export default header;
