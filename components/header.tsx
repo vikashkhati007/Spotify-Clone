@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 const header = () => {
   return (
-    <header className="w-[80%] h-16 flex justify-between bg-black bg-opacity-95 p-3 text-white items-center">
+    <header className="w-[100%] h-16 flex justify-between bg-black bg-opacity-95 p-3 text-white items-center">
       <div className="flex gap-2">
       <Image className="bg-white rounded-full border border-gray-200 hover:cursor-pointer opacity-40 hover:opacity-100" src={"/navigation/previous.png"} width={30} height={30} alt="next"/>
       <Image className="bg-white rounded-full border border-gray-200 hover:cursor-pointer opacity-40 hover:opacity-100" src={"/navigation/next.png"} width={30} height={30} alt="next"/>
