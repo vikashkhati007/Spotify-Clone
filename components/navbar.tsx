@@ -3,7 +3,7 @@ const Navbar = () => {
     <>
       <div className="w-[20%] bg-black flex flex-col gap-5">
         <div className="logocontainer flex w-full items-center justify-center text-white">
-          <svg width={150} height={150} viewBox="0 0 1134 340">
+          <svg width={130} height={150} viewBox="0 0 1134 340">
             <title>Spotify</title>
             <path
               fill="white"

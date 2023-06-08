@@ -6,7 +6,7 @@ const HomeBody = () => {
     <div className="w-[100%] bg-[#1C1C1C]">
       <Header />
       <div className="p-10 text-white ">
-        <h1 className="hover:underline cursor-pointer font-bold text-2xl">
+        <h1 className="hover:underline cursor-pointer font-bold text-2xl w-fit my-5">
           Focus
         </h1>
         <div className="carditems w-[231px] h-[318px] rounded-md bg-black bg-gradient-to-t from-[#1C1C1C] to-[#0E0E0E] shadow-lg cursor-pointer ">
@@ -19,8 +19,8 @@ const HomeBody = () => {
               height={189}
               alt="render"
             />
-            <p className="text-sm text-left w-full font-extrabold px-5">Peacefull Piano</p>
-            <span className="text-xs px-5 opacity-75">
+            <p className="itemtitle text-[15px] text-left w-full font-extrabold px-5 py-2">Peaceful Piano</p>
+            <span className="itemdescription text-xs px-5 opacity-75 font-bold">
               Peaceful piano to help you slow down, breathe, and..
             </span>
           </div>
