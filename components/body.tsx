@@ -21,7 +21,7 @@ const HomeBody = () => {
             />
             <p className="itemtitle text-[15px] text-left w-full font-extrabold px-5 py-2">Peaceful Piano</p>
             <span className="itemdescription text-xs px-5 opacity-75 font-bold">
-              Peaceful piano to help you slow down, breathe, and..
+              Peaceful piano to help you slow down, breathe, and...
             </span>
           </div>
         </div>
